@@ -1,10 +1,10 @@
 # MentorHub System Architecture
 
-## 🏗 System Overview
+##  System Overview
 
 MentorHub follows a modern full-stack architecture using Next.js for both frontend and backend, providing optimal performance, SEO benefits, and streamlined development.
 
-## 🎯 Architecture Components
+##  Architecture Components
 
 ### 1. Frontend Layer
 
@@ -28,6 +28,7 @@ MentorHub follows a modern full-stack architecture using Next.js for both fronte
 ### 2. Backend Layer (Next.js API Routes)
 
 #### API Structure
+```
 /app
 /api
 /auth/[...nextauth]/route.ts # Authentication
@@ -37,7 +38,7 @@ MentorHub follows a modern full-stack architecture using Next.js for both fronte
 /messaging/route.ts # Chat functionality
 /goals/route.ts # Progress tracking
 /feedback/route.ts # Feedback system
-
+```
 
 #### Core Services
 
@@ -82,17 +83,26 @@ MentorHub follows a modern full-stack architecture using Next.js for both fronte
 - **Payments**: Stripe (future features)
 - **Analytics**: Vercel Analytics
 
-## 🔄 Component Communication
+##  Component Communication
 
 ### Data Flow
+
 Frontend (Next.js Components)
+
 ↓
+
 Next.js API Routes
+
 ↓
+
 Service Layer
+
 ↓
+
 Database (MongoDB)
+
 ↓
+
 External Services
 
 
@@ -102,7 +112,7 @@ External Services
 - **Server Actions**: Next.js form handling
 - **Authentication**: NextAuth.js with JWT
 
-## 🛡 Security Architecture
+##  Security Architecture
 
 ### Authentication & Authorization
 - **NextAuth.js** with multiple providers
@@ -115,7 +125,7 @@ External Services
 - **Input Validation**: Zod schema validation
 - **Rate Limiting**: Redis-based rate limits
 
-## 📈 Performance Optimization
+##  Performance Optimization
 
 ### Next.js Optimizations
 - **Server-Side Rendering (SSR)**: Dynamic pages
@@ -128,7 +138,7 @@ External Services
 - **Vercel Edge**: Global CDN caching
 - **Browser Caching**: Static assets
 
-## 🚀 Deployment Architecture
+##  Deployment Architecture
 
 ### Production Environment
 - **Platform**: Vercel (Next.js optimized)
@@ -142,7 +152,7 @@ External Services
 - **Testing**: Jest, React Testing Library, Cypress
 - **CI/CD**: GitHub Actions with Vercel
 
-## 🔧 Tech Stack Summary
+##  Tech Stack Summary
 
 ```yaml
 Frontend: Next.js 14+ (App Router)
@@ -155,7 +165,7 @@ Deployment: Vercel
 Mobile: React Native (Expo)
 ```
 
-## ✅ Technical Feasibility
+##  Technical Feasibility
 
 ### Next.js Advantages
 - **Full-Stack**: Single framework for frontend and backend

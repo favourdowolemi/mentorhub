@@ -65,6 +65,7 @@ Finding the right mentor can be challenging and time-consuming. Traditional meth
 **For Mentees**: Get personalized guidance from relevant mentors, track your progress with clear goals and actionable milestones, and achieve measurable results faster.
 
 **For Mentors**: Share your knowledge efficiently with structured tools that maximize impact while respecting your time commitments.
+
 ---
 
 ### Mentor UI mockup
